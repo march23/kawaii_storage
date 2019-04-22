@@ -1,0 +1,18 @@
+[
+  {
+    "name": "PodSockets",
+    "quantity": 4,
+    "description": "phone holders"
+  },
+  {
+    "name": "Lockers",
+    "quantity": 6,
+    "description": "luggage lockers"
+  },
+  {
+    "name": "rilakkuma bags",
+    "quantity": 4,
+    "description": "funny bags"
+  }
+
+]
