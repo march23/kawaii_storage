@@ -1,18 +1,12 @@
 var express = require('express');
 var app = express();
-var fs = require('fs');
+var routes = require('./routes');
 
-app.get('/', function(req, res) {
-  res.send('Welcome,  Kawaii Storage Center');
-});
-
-app.get('/products', function(req, res) {
-  fs.readFile('./files/default_storage.json', function(err, data) {
-    res.writeHead(200, {'Content-Type': 'application/json'});
-    res.end(JSON.stringify(JSON.parse(data)));
-  });
-});
-
+app.set('views', __dirname + '/views');
+app.set('view engine', 'pug')
+ 
+app.use('/', routes);
+ 
 app.listen(8080 );
 
 
